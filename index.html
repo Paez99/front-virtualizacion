@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Personal - Paez Lopez</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body class="bg-dark">
+    <div class="row">
+        <div class="container col col-xl-8 col-sm-8 px-5 bg-light mt-2" id="containerprincipal">
+            <div class="text-center mt-3 mb-3">
+                <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+                    <div class="container mt-0 inicio-general">
+                        <div class="row justify-content-center">
+                            <div class="col-8 col-sm-8 col-md-4 col-lg-4 m-2 p-0 d-flex">
+                                <img class="img-fluid"
+                                    src="https://drive.google.com/uc?export=view&id=1oX7l5pT_zyhlRQss2jJFzAAKM96FLyff"
+                                    alt="">
+                            </div>
+                            <div
+                                class="p-0 col-11 col-sm-12 col-md-11 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="text-center ml-1 mb-5">Blog Personal</h1>
+                                <h4 class="text-center ml-2 mb-5">Ingenieria en Sistemas de Información - FRT - UTN</h4>
+                                <h5 class="text-center ml-2">Cátedra de Virtualizacion y Consolidación de Servidores
+                                    </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-warning mt-5">
+                    <a class="navbar-brand" id="navbar"><b>Blog Personal</b></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="container-fluid justify-content-center mt-2 d-flex">
+                    <div class="card text-left col-4 m-4">
+                        <img class="card-img-top" src="" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Información Personal</h4>
+                            <p class="card-text"><b>Nombre:</b>
+                            <span id="nombrepropioInfoPersonal">NOMBRE</span>
+                            </p>
+                            <p class="card-text"><b>Legajo:</b>
+                            <span id="legajoInfoPersonal">legajo</span>
+                            </p>
+                            <p class="card-text"><b>Comisión:</b>
+                            <span id="comisionInfoPersonal">comision</span>
+                            </p>
+                            <p class="card-text"><b>Edad:</b>
+                            <span id="edadInfoPersonal">edad</span>
+                            </p>
+                            <p class="card-text"><b>Mail:</b>
+                                <span id="mailInfoPersonal">mail</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-left col-4 m-4">
+                        <img class="card-img-top" src="" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Temas desarrollados</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text" id="tema1">Plataforma Proxmox</p>
+                                </li>
+                                <li>
+                                    <p class="card-text" id="tema2">Administracion de contenedores</p>
+                                </li>
+                                <li>
+                                    <p class="card-text" id="tema3">Propuesta de solución de blog utilizando contenedores en entorno Linux</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card text-left col-3 m-4">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-center mb-5">Trabajo Final Integrador</h4>
+                            <a class="card-text text-center"
+                                href="https://drive.google.com/file/d/1qh04T3l4zpXpMYZ0qSmqeH71dxnlS3Zw/view?usp=sharing">
+                                <b>Ver PDF Final</b>
+                                <span class="material-symbols-outlined">
+                                        file_download
+                                    </span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-warning">
+                <div class="m-3 mb-2 text-center justify-content-center">
+                    <p class="font-weight-normal text-white" style="font-size: x-large;"><b>Información de los contenedores</b></p> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="container col text-center mt-3 mb-3 mr-5 ml-5">
+                    <table id="contenedores" class="table align-middle">
+                        <thead>
+                          <tr>
+                              <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Memoria</th>
+                            <th scope="col">Almacenamiento</th>
+                            <th scope="col">Procesador</th>
+                            <th scope="col">IP</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td id="id1">102</td>
+                            <th id="nombre1">41698927A</th>
+                            <td id="memoria1">128 MB</td>
+                            <td id="almacenamiento1">8 GB</td>
+                            <td id="procesador1">1 núcleo</td>
+                            <td id="ip1">192.168.77.237</td>
+                          </tr>
+                          <tr>
+                            <td id="id2">105</td>
+                            <th id="nombre2">41698927DB</th>
+                            <td id="memoria2">128 MB</td>
+                            <td id="almacenamiento2">8 GB</td>
+                            <td id="procesador2">1 núcleo</td>
+                            <td id="ip2">192.168.77.235</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<footer class="site-footer">
+    <div class="container" id="containerfooter">
+        <div class="row">
+            <div class="col-sm-12 col-l-6 col-md-6">
+                <h6>Sobre el trabajo</h6>
+                <p> Este blog fue desarrollado por el alumno con motivo de presentación del
+                    Trabajo Práctico Final de la
+                    materia Virtualizacion y Consolidación de Servidores, dictada por el profesor Jose María Carriles.
+                </p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">
+                    <span id = "copyright">2023 - Paez Lopez</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+</html>
