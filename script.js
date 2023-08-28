@@ -7,7 +7,7 @@ var imgPerfil = document.getElementById("imgPerfil");
 var copyright = document.getElementById("copyright");
 
 async function buscarAlumno(){
-    const datospersonales = await fetch('http://192.168.77.235:3000/alumno/1').then(res => {return res.json() });
+    const datospersonales = await fetch('192.168.77.235:3000/alumno/1').then(res => {return res.json() });
     datos = datospersonales[0];
     console.log(datospersonales);
     
@@ -19,7 +19,7 @@ async function buscarAlumno(){
 }
 
 async function buscarTrabajoFinal(){
-    const trabajofinal = await fetch('http://192.168.77.235:3000/trabajofinal/1').then(res => { return res.json() });
+    const trabajofinal = await fetch('192.168.77.235:3000/trabajofinal/1').then(res => { return res.json() });
     console.log(trabajofinal);
 }
 
